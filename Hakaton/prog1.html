@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+<style type="text/css">
+html, body {
+    font-family: 'Amatic SC', 'cursive';
+}
+
+.w3-container{
+  width: 100%;
+  overflow:hidden;
+}
+</style>
+<body class="w3-container">
+
+    
+
+
+<div class="w3-progress-container w3-xxxlarge w3-round-large" >
+   <div id="myBar1" class="w3-progressbar w3-red w3-round-large" style="width:0% font-family: Amatic SC, cursive"><div id="demo" class="w3-center w3-text-white" ></div></div>
+  <div id="myBar2" class="w3-progressbar w3-yellow w3-round-large" style="width:0% z-index:-1"><div id="demo1" class="w3-center w3-text-white"></div></div>
+  <div id="myBar3" class="w3-progressbar w3-orange w3-round-large" style="width:0%"><div id="demo2" class="w3-center w3-text-white" ></div></div>
+  <div id="myBar" class="w3-progressbar w3-green w3-round-large" style="width:0% "><div id="demo3" class="w3-center w3-text-white" ></div></div>
+  
+
+ </div>
+<div  onmouseover= "move()" style="width:1200px; height:200px;" ></div> 
+
+<script>
+ var width1 = 65;
+
+  
+ 
+if (width1<=30){
+function move() {
+  
+  var elem = document.getElementById("myBar1");   
+  var width = 0;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width >= width1) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+      document.getElementById("demo").innerHTML = width * 1  + '%';
+    }
+  }
+}
+}
+else if (width1>30&&width1<=50){
+function move() {
+  
+  var elem = document.getElementById("myBar3");   
+  var width = 0;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width >= width1) {
+      clearInterval(id);
+    } else {
+       
+      elem.style.width = width + '%'; 
+      document.getElementById("demo2").innerHTML = width * 1  + '%';
+    }
+  }
+}
+}
+else if (width1>50&&width1<=75){
+function move() {
+  
+  var elem = document.getElementById("myBar2");   
+  var width = 0;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width >= width1) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+      document.getElementById("demo1").innerHTML = width * 1  + '%';
+    }
+  }
+}
+}
+else if (width1>75&&width1<=100){
+function move() {
+  
+  var elem = document.getElementById("myBar");   
+  var width = 0;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width >= width1) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+      document.getElementById("demo3").innerHTML = width * 1  + '%';
+    }
+  }
+}
+}
+
+</script>
+
+
+</body>
