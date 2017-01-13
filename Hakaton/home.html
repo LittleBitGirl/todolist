@@ -22,6 +22,11 @@
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.teal-blue.min.css">
+  <script src="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -53,13 +58,13 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                       <ul class="nav navbar-nav navbar-right">
                        <div class="btn-group" role="group" aria-label="...">
-                          
+
                          <button class ="login">Log in</button>
                          <button class= "signup">Sign up</button>
                       </div>
 
-    
-        
+
+
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -72,39 +77,137 @@
 
 
     <!-- Header -->
-   
-    <div class="intro-header" style="background-image: url(im1.jpg)">
-
-        <h1>If you can wake up every morning loving what you do, <p>help & inspire others around you to be better than they were yesterday, </p> 
-        <p> then you know you’re doing something right in business and in life.</p></h1>
-        
-    
-
-    </div>
-    
     <div class="content-section-a">
       <h2>TO-DO LIST</h2>
       <object class="file" type="text/html" data="index.html"></object>
       <object class="file2" type="text/html" data="index1.html"></object>
 
     </div>
-        
+
+    <!-- /.content-section-a -->
+    <div id="myModal" class="modal fade" role="dialog">
+<div class="modal-dialog" >
+
+  <!-- Modal content-->
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal">&times;</button>
+      <h4 class="modal-title">Log in</h4>
+    </div>
+    <div class="modal-body">
+        <div class="registration">
+              <form action="#" >
+                    <div class="mdl-textfield mdl-js-textfield">
+                        <input class="mdl-textfield__input" type="text" id="sample1" maxlength="30" placeholder="Enter email"  />
+                        <label class="mdl-textfield__label" for="sample1"></label>
+                    </div>
+              </form>
+              <form action="#">
+
+                  <div class="mdl-textfield mdl-js-textfield">
+                  <input class="mdl-textfield__input" type="password" id="sample1" maxlength="15" placeholder="Enter your password" />
+                  <label class="mdl-textfield__label" for="sample1"></label>
+                  </div>
+              </form>
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Log in</button>
+              <h6 id="label_reg">First time on ToDoList.com?</h6>
+              <button class= "signup" class="btn btn-info btn-lg" id="btnsign" data-toggle="modal" data-target="#myModal">Sign up</button>
+          </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+  </div>
+</div>
+<div id="myModal2" class="modal fade" role="dialog">
+<div class="modal-dialog" id="mod2">
+
+  <!-- Modal content-->
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal">&times;</button>
+      <h4 class="modal-title">Log in</h4>
+    </div>
+    <div class="modal-body">
+        <div class="registration">
+            <form action="#" >
+                <div class="mdl-textfield mdl-js-textfield">
+                    <input class="mdl-textfield__input" type="text" id="sample1" maxlength="30" placeholder="Enter your email address"  />
+                    <label class="mdl-textfield__label" for="sample1"></label>
+                </div>
+            </form>
+            <form action="#">
+
+                <div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" type="password" id="sample1" maxlength="15" placeholder="Enter your password" />
+                <label class="mdl-textfield__label" for="sample1"></label>
+                </div>
+            </form>
+            <form action="#">
+                <div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" type="password" id="sample1" placeholder="Confirm password"/>
+                <label class="mdl-textfield__label" for="sample1"></label>
+                </div>
+            </form>
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Sign up</button>
+              <h6 id="label_reg">Already have an account?</h6>
+              <button class= "signup" class="btn btn-info btn-lg" id="btnsign" data-toggle="modal" data-target="#myModal">Log in</button>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      </div>
+    </div>
+    <!-- Page Content -->
+
+    <a  name="services"></a>
+    <div class="left"></div>
+    <div class="content-section-a">
+      <object class="file" type="text/html" data="index.html"></object>
+        <!-- /.container -->
+        </div>
     <!-- /.content-section-a -->
 
+    </div>
+
     <div class="content-section-b">
-        
+
            </div>
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    
+
                     <p class="copyright text-muted small">Copyright &copy; SDU. All Rights Reserved</p>
                 </div>
             </div>
         </div>
     </footer>
 
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+    <!--Код для работы с PopUp -->
+    <script type="text/javascript">
+      $(document).ready(function(){
+      //Скрыть PopUp при загрузке страницы
+          PopUpHide();
+      });
+      //Функция отображения PopUp
+      function PopUpShow(){
+          $("#popup1").show();
+      }
+      //Функция скрытия PopUp
+      function PopUpHide(){
+          $("#popup1").hide();
+      }
+    </script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
