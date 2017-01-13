@@ -1,0 +1,89 @@
+
+a{
+    text-decoration: none;
+    color: inherit;
+    font-size:20px;
+    top: 300px;
+}
+
+
+header>h2{
+    text-align: right;
+    padding: 1em;
+    margin: 0px;
+    font-weight: 200;
+    border-bottom: solid black 3px;
+}
+nav{
+    width: 100%;
+    color: black;
+    margin:0 0 250 0px;
+    padding: 20px;
+    text-align: right;
+    z-index: 1;
+    display: inline-block
+
+
+}
+.change{
+    -webkit-transition: background-color 0.4s,color 0.4s,box-shadow 0.2s;
+}
+
+.fixed{
+    position: fixed;
+    top:0;
+    margin: 0 0 0 0px;
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+
+}
+.nav-placeholder{
+   margin:0 0 25 0px;
+}
+.banner {
+    height:400px;
+    background-image: url("https://unsplash.com/photos/tXICOsK8Duc/download");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 8px 17px 0 rgba(0, 0, , 0.2)
+}
+.heading {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    padding-top: 100px;
+
+}
+
+
+.registration {
+    height: 100%;
+    width:20%;
+    position: relative;
+    left: 30%;
+    margin-top:10%;
+    color: gray;
+    font-weight: 200
+}
+
+.registration1 {
+    height: 100%;
+    width:20%;
+    position: relative;
+    left: 52%;
+    bottom: 485px;
+    color: gray;
+    font-weight: 200
+}
+
+* {
+    margin: 0px;
+}
+
+.mdl-textfield__input {
+    color:black;
+}
+
+.mdl-button {
+    margin:13% 0% 70% 33% ;
+}
